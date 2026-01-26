@@ -1,15 +1,8 @@
-# Elysia with Bun runtime
+# Streamable Dictionary API (OpenAI)
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
+## Tech Stack
 
-Open http://localhost:3000/ with your browser to see the result.
+- [Bun](https://bun.com/) - Runtime
+- [OpenAI](https://openai.com/) - AI
+- [Elysia](https://elysiajs.com/) - Ergonomic Framework
