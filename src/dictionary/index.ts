@@ -3,8 +3,8 @@ import { DictionaryService } from "./service";
 
 const dictionaryService = new DictionaryService();
 
-export function dictionaryRoutes(app: Elysia) {
-	return app.get("/dictionary/stream", async function*({ set, query }) {
+export const dictionaryRoutes = new Elysia({ prefix: "/dictionary" })
+	.get("/stream", async function*({ set, query }) {
 			set.headers = {
 				"Content-Type": "text/event-stream",
 				"Cache-Control": "no-cache",
@@ -17,5 +17,4 @@ export function dictionaryRoutes(app: Elysia) {
 			query: t.Object({
 				word: t.String({ minLength: 3, maxLength: 50 })
 			})
-		})
-}
+	})
