@@ -4,7 +4,7 @@ import { dictionaryRoutes } from "./dictionary";
 const app = new Elysia()
 	.get("/health", () => ({ status: "ok" }));
 
-// dictionaryRoutes(app);
+dictionaryRoutes(app);
 app.listen(3000);
 
 console.log(
