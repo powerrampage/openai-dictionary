@@ -3,13 +3,14 @@
   "version": "1.0.50",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-		"build": "bun build ./src/index.ts --outdir ./dist --target bun"
+	"build": "bun build ./src/index.ts --outdir ./dist --target bun"
   },
   "dependencies": {
     "elysia": "latest",
     "openai": "^6.16.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+	"typescript": "^5.9.3"
   }
 }
