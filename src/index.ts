@@ -3,7 +3,7 @@ import { dictionaryRoutes } from "./dictionary";
 
 const app = new Elysia()
 	.get("/health", () => ({ status: "ok" }))
-	.use(dictionary)
+	.use(dictionaryRoutes)
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
