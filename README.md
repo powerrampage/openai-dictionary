@@ -1,8 +1,8 @@
-# Streamable Dictionary API (OpenAI)
+# Dictionary API (SDK)
 
 
 ## Tech Stack
 
 - [Bun](https://bun.com/) - Runtime
-- [OpenAI](https://openai.com/) - AI
 - [Elysia](https://elysiajs.com/) - Ergonomic Framework
+- [SDK](https://ai-sdk.dev/) - AI Toolkit
